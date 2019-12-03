@@ -1,0 +1,192 @@
+charts:
+- images:
+  - docker.io/bitnami/external-dns:0.5.17-debian-9-r50
+  name: external-dns
+  prefix: bitnami
+  url: https://charts.bitnami.com/bitnami
+  version: 2.11.0
+- images:
+  - weaveworks/flagger:0.20.3
+  name: flagger
+  prefix: flagger
+  url: https://flagger.app
+  version: 0.20.3
+- images:
+  - grafana/grafana:6.2.5
+  name: grafana
+  prefix: flagger
+  url: https://flagger.app
+  version: 1.3.0
+- images:
+  - gcr.io/jenkinsxio/bucketrepo:0.1.27
+  name: bucketrepo
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 0.1.27
+- images:
+  - gcr.io/jenkinsxio/dex:2.13.21
+  name: dex
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 2.13.21
+- images:
+  - gcr.io/jenkinsxio/builder-maven:2.0.1045-378
+  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.5.1
+  name: environment-controller
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 0.0.560
+- name: exposecontroller
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 2.3.116
+- images:
+  - jenkinsxio/exposecontroller:2.3.74
+  name: exposecontroller-service
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 1.0.7
+- images:
+  - chartmuseum/chartmuseum:v0.7.1
+  - gcr.io/jenkinsxio/builder-jx:2.0.1045-378
+  - gcr.io/jenkinsxio/jenkinsx:0.0.81
+  - gcr.io/jenkinsxio/nexus:0.1.7
+  - k8s.gcr.io/addon-resizer:1.7
+  - k8s.gcr.io/heapster:v1.5.2
+  - registry:2.6.2
+  name: jenkins-x-platform
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 2.0.1707
+- name: jx-build-templates
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 0.0.1245
+- name: jxboot-resources
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 0.0.22
+- images:
+  - rawlingsj/build-controller:upstream3
+  name: knative-build
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 0.1.19
+- images:
+  - gcr.io/jenkinsxio/lh-tide:0.0.328
+  - gcr.io/jenkinsxio/lighthouse:0.0.328
+  name: lighthouse
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 0.0.328
+- images:
+  - gcr.io/jenkinsxio/prow/build:v20191001-b0861a4
+  - gcr.io/jenkinsxio/prow/crier:v20191001-b0861a4
+  - gcr.io/jenkinsxio/prow/deck:v20191001-b0861a4
+  - gcr.io/jenkinsxio/prow/hook:v20191001-b0861a4
+  - gcr.io/jenkinsxio/prow/horologium:v20191001-b0861a4
+  - gcr.io/jenkinsxio/prow/pipeline:v20191001-b0861a4
+  - gcr.io/jenkinsxio/prow/plank:v20191001-b0861a4
+  - gcr.io/jenkinsxio/prow/sinker:v20191001-b0861a4
+  - gcr.io/jenkinsxio/prow/tide:v20191001-b0861a4
+  - jenkinsxio/jx:2.0.1045
+  name: prow
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 0.0.1522
+- images:
+  - gcr.io/jenkinsxio/sso-operator:1.2.33
+  name: sso-operator
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 1.2.33
+- images:
+  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.5.1
+  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.5.1
+  name: tekton
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 0.0.47
+- images:
+  - banzaicloud/vault-operator:0.4.16
+  name: vault-operator
+  prefix: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+  version: 0.3.1
+- images:
+  - quay.io/jetstack/cert-manager-cainjector:v0.9.1
+  - quay.io/jetstack/cert-manager-controller:v0.9.1
+  - quay.io/jetstack/cert-manager-webhook:v0.9.1
+  name: cert-manager
+  prefix: jetstack
+  url: https://charts.jetstack.io
+  version: v0.9.1
+- images:
+  - quay.io/jetstack/cert-manager-controller:v0.6.2
+  - quay.io/jetstack/cert-manager-webhook:v0.6.2
+  name: cert-manager
+  prefix: stable
+  url: https://kubernetes-charts.storage.googleapis.com
+  version: v0.6.7
+- images:
+  - docker.io/bitnami/external-dns:0.5.17-debian-9-r50
+  name: external-dns
+  prefix: stable
+  url: https://kubernetes-charts.storage.googleapis.com
+  version: 2.11.0
+- images:
+  - grafana/grafana:6.5.0
+  name: grafana
+  prefix: stable
+  url: https://kubernetes-charts.storage.googleapis.com
+  version: 4.1.0
+- images:
+  - k8s.gcr.io/defaultbackend-amd64:1.5
+  - quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.26.1
+  name: nginx-ingress
+  prefix: stable
+  url: https://kubernetes-charts.storage.googleapis.com
+  version: 1.26.1
+- images:
+  - jimmidyson/configmap-reload:v0.2.2
+  - prom/alertmanager:v0.18.0
+  - prom/prometheus:v2.13.1
+  - prom/pushgateway:v0.8.0
+  - quay.io/coreos/kube-state-metrics:v1.6.0
+  name: prometheus
+  prefix: stable
+  url: https://kubernetes-charts.storage.googleapis.com
+  version: 9.3.2
+- name: velero
+  prefix: stable
+  url: https://kubernetes-charts.storage.googleapis.com
+  version: 2.5.0
+duplicateImages:
+- Image: quay.io/jetstack/cert-manager-controller
+  Versions:
+    v0.6.2: stable/cert-manager:v0.6.7
+    v0.9.1: jetstack/cert-manager:v0.9.1
+- Image: gcr.io/jenkinsxio/builder-jx
+  Versions:
+    2.0.1045-378: jenkins-x/jenkins-x-platform:2.0.1707
+    2.0.1046-379: stream
+- Image: jenkinsxio/jx
+  Versions:
+    2.0.69: stream
+    2.0.1045: jenkins-x/prow:0.0.1522
+- Image: grafana/grafana
+  Versions:
+    6.2.5: flagger/grafana:1.3.0
+    6.5.0: stable/grafana:4.1.0
+- Image: banzaicloud/vault-operator
+  Versions:
+    0.4.16: jenkins-x/vault-operator:0.3.1
+    0.5.3: stream
+- Image: gcr.io/jenkinsxio/builder-maven
+  Versions:
+    2.0.1045-378: jenkins-x/environment-controller:0.0.560
+    2.0.1046-379: stream
+- Image: quay.io/jetstack/cert-manager-webhook
+  Versions:
+    v0.6.2: stable/cert-manager:v0.6.7
+    v0.9.1: jetstack/cert-manager:v0.9.1
